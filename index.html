@@ -5,46 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Document</title>
+    <title>🎨 Color Selector Generator</title>
   </head>
   <body>
+    <!--top choosing section -->
+    <div id="nav-container">
+      <div id="color-picker-container">
+        <label for="color-picker"> Choose a color:</label>
+        <input id="color-picker" type="color" />
+      </div>
+      <div id="modes-container">
+        <label for="modes" id="mode"> Choose a mode: </label>
+        <select name="mode-options" id="modes">
+          <option value="monochrome">monochrome</option>
+          <option value="monochrome-dark">monochrome-light</option>
+          <option value="analogic">analogic</option>
+          <option value="complement">complement</option>
+          <option value="analogic-complement">analogic-complement</option>
+          <option value="triad">triad</option>
+          <option value="quad">quad</option>
+        </select>
+      </div>
+      <div id="selection-btn-container">
+        <button id="selection-btn">Get scheme</button>
+      </div>
+    </div>
 
-    <!--top choosing section --> 
-    <nav>
-      <input type="color" />
-      <label for="modes" id="mode"> Choose a mode: </label>
-      <select name="mode-options" id="modes">
-        <option value="monochrome">monochrome</option>
-        <option value="monochrome-dark">monochrome-light</option>
-        <option value="analogic">analogic</option>
-        <option value="complement">complement</option>
-        <option value="analogic-complement">analogic-complement</option>
-        <option value="triad">triad</option>
-        <option value="quad">quad</option>
-      </select>
-      <button>Get colour scheme</button>
-    </nav>
-
-
-<!--color blocks and hex codes-->
-    <section //row>
-      <div //column children flex-end>
-        <div>hex</div>
+    <!--color blocks and hex codes-->
+    <div id="section-container">
+      <div class="color-column color-one">
+        <div class="text-column">hex</div>
       </div>
-      <div //column children flex-end>
-        <div>hex</div>
+      <div class="color-column color-two">
+        <div class="text-column">hex</div>
       </div>
-      <div //column children flex-end>
-        <div>hex</div>
+      <div class="color-column color-three">
+        <div class="text-column">hex</div>
       </div>
-      <div //column children flex-end>
-        <div>hex</div>
+      <div class="color-column color-four">
+        <div class="text-column">hex</div>
       </div>
-      <div //column children flex-end>
-        <div>hex</div>
+      <div class="color-column color-five">
+        <div class="text-column">hex</div>
       </div>
-    </section>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
