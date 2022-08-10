@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 50px 0;
   font-family: "Oxygen", sans-serif;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,8 +17,8 @@ body {
 /*  Nav section */
 
 #nav-container {
-  width: 800px;
-  height: 50px;
+  width: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@ body {
 }
 
 #selection-btn {
-  background-color: #ffe568;
+  border: 1.5px solid #d90429;
 }
 
 /* Color section  */
@@ -73,13 +74,13 @@ body {
   align-items: center;
   justify-content: center;
 
-  height: 800px;
-  width: 800px;
+  height: 700px;
+  width: 70%;
   box-shadow: 7px 5px 7px 6px #b2b2b2;
 }
 
 .color-column {
-  width: 160px;
+  width: 14%;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -113,4 +114,15 @@ body {
 
 .color-five {
   background-color: #283618;
+}
+
+/*  media queries  */
+
+@media (max-width: 420px) {
+  #nav-container,
+  #color-picker-container,
+  #modes-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
